@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/pickerTitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="选择地区"
+                android:textColor="@color/picker_title_text_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pickerConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="确定"
+                android:textColor="@color/picker_select_text_color"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/groupSelect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/mTextFirst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:button="@null"
+                    android:textColor="@color/text_selecter"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/mTextSecond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:button="@null"
+                    android:textColor="@color/text_selecter"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/mTextThird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:button="@null"
+                    android:textColor="@color/text_selecter"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/mTextFourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:textColor="@color/text_selecter"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </FrameLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/picker_border_color"/>
+
+        <ListView
+            android:id="@+id/pickerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="#00000000"/>
+    </LinearLayout>
+
+
+</LinearLayout>
