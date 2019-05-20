@@ -11,14 +11,11 @@ import com.example.pickerviewlibrary.picker.entity.PickerData;
 import com.example.pickerviewlibrary.picker.entity.ProvinceBean;
 import com.example.pickerviewlibrary.picker.entity.SecondBean;
 import com.example.pickerviewlibrary.picker.entity.ThirdBean;
-import com.example.pickerviewlibrary.picker.listener.OnPickerClickListener;
 import com.example.pickerviewlibrary.picker.util.JsonArrayUtil;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -51,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         ThirdBean thirdBean = new ThirdBean();
         mThirdDatas.putAll(thirdBean.getRepData().getThird());
 
-        Log.i("json",JsonArrayUtil.toJson(mProvinceDatas));
+        Log.i("json", JsonArrayUtil.toJson(mProvinceDatas));
         Log.i("json",JsonArrayUtil.toJson(mSecondDatas));
         Log.i("json",JsonArrayUtil.toJson(mThirdDatas));
 
