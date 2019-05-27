@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.example.pickerviewlibrary.picker.PickerView;
 import com.example.pickerviewlibrary.picker.entity.PickerData;
 import com.example.pickerviewlibrary.picker.entity.ProvinceBean;
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     List<String> mProvinceDatas=new ArrayList<>();
     Map<String, List<String>> mSecondDatas= new HashMap<>();
     Map<String, List<String>> mThirdDatas= new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

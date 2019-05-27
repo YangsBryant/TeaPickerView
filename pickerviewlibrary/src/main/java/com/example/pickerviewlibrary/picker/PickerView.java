@@ -6,13 +6,8 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
-import android.graphics.drawable.LayerDrawable;
-import android.graphics.drawable.StateListDrawable;
-import android.os.Build;
-import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -133,11 +128,11 @@ public class PickerView extends PopupWindow implements View.OnClickListener {
     }
 
     //自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
-    public PickerView setContentText(ColorStateList drawable){
-        mTextFirst.setTextColor(drawable);
-        mTextSecond.setTextColor(drawable);
-        mTextThird.setTextColor(drawable);
-        mTextFourth.setTextColor(drawable);
+    public PickerView setContentText(ColorStateList colorStateList){
+        mTextFirst.setTextColor(colorStateList);
+        mTextSecond.setTextColor(colorStateList);
+        mTextThird.setTextColor(colorStateList);
+        mTextFourth.setTextColor(colorStateList);
         return this;
     }
 
