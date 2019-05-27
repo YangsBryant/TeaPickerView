@@ -93,6 +93,16 @@ setDiscolourHook(boolean bl) | 设置选中项是否有√图标，默认false
 setCustomHook(Drawable drawable) | 自定义√图标
 build() | 参数设置完毕，一定要build一下
 
+方法名 | 属性
+--------- | -------------
+setFirstDatas(List<String> mFirstDatas) | 设置一级数据
+setSecondDatas(Map<String, List<String>> mSecondDatas) | 设置二级数据
+setThirdDatas(Map<String, List<String>> mThirdDatas) | 设置三级数据
+setFourthDatas(Map<String, List<String>> mFourthDatas) | 设置四级数据
+	
+## 给出参考bean地址
+[一级ProvinceBean]()[二级SecondBean]()[三级ThirdBean]()
+
 ## 默认内容栏字体颜色变换器
 ```java
 <?xml version="1.0" encoding="utf-8"?>
