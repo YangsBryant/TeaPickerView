@@ -68,4 +68,11 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-###### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
+##### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
+
+## TeaPickerView属性大全
+方法名 | 属性
+--------- | -------------
+setHeights | 显示具体的高度(dp),设置0是自适应
+setScreenH | 显示的高度占屏幕的百分比(高度没有默认值，需要主动设置)
+
