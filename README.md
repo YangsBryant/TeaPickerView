@@ -73,6 +73,23 @@ public class MainActivity extends AppCompatActivity {
 ## TeaPickerView属性大全
 方法名 | 属性
 --------- | -------------
-setHeights | 显示具体的高度(dp),设置0是自适应
-setScreenH | 显示的高度占屏幕的百分比(高度没有默认值，需要主动设置)
-
+setHeights(int mHeight) | 显示具体的高度(dp),设置0是自适应(高度没有默认值，需要主动设置)
+setScreenH(int num) | 显示的高度占屏幕的百分比
+setBackground(int color) | 设置整体的背景颜色 默认是#ffffff
+setRadius(int mRadius) | 设置圆角，默认0
+setContentBackground(int color) | 内容栏的背景颜色 默认是#ffffff
+setContentHeight(int mHeight) | 内容栏的高度(dp) 默认是50dp
+setContentText(int size,int color) | 内容栏字体的大小和颜色, 默认是16sp,#0aa666，用此方法会固定颜色
+setContentText(ColorStateList drawable) | 自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
+setContentLine(boolean bl) | 内容栏选中是否有下划线 默认不开启
+setContentLineColor(Drawable drawable) | 自定义内容栏下划线用layer-list 默认是下边框描边 颜色#0fbc72 高度1dp
+setLine(int mHeight,int color) | 分割线的高度和颜色 默认是0.5dp #e5e5e5
+setitemHeight(int mHeight) | 设置list的item的高度(dp) 默认是40dp
+setListText(int size,int color) | 设置list的字体大小和颜色 默认是15 #555
+setScrollBal(boolean bl) | 设置list是否显示滚动条,默认false
+setAlpha(float mFloat) | 设置阴影层的透明度 默认是0.5f
+setDiscolour(boolean bl) | 设置选中项是否加色，默认true
+setDiscolourColor(int color) | 设置选中项加色的颜色值，默认#0aa666
+setDiscolourHook(boolean bl) | 设置选中项是否有√图标，默认false
+setCustomHook(Drawable drawable) | 自定义√图标
+build() | 参数设置完毕，一定要build一下
