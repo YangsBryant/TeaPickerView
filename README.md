@@ -101,7 +101,7 @@ setThirdDatas(Map<String, List<String>> mThirdDatas) | 设置三级数据
 setFourthDatas(Map<String, List<String>> mFourthDatas) | 设置四级数据
 	
 ## 给出参考bean地址
-[一级ProvinceBean]()[二级SecondBean]()[三级ThirdBean]()
+[一级ProvinceBean](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/entity/ProvinceBean.java)  [二级SecondBean](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/entity/SecondBean.java)  [三级ThirdBean](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/entity/ThirdBean.java)
 
 ## 默认内容栏字体颜色变换器
 ```java
