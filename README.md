@@ -5,8 +5,6 @@ https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/m
 
 
 
-···Java
-
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.mButton)
@@ -69,4 +67,3 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-···
