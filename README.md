@@ -68,8 +68,6 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-#### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
-
 ## TeaPickerView属性大全
 方法名 | 属性
 --------- | -------------
@@ -81,7 +79,7 @@ setInitSelectText | 初始化文字
 setContentBackground(int color) | 内容栏的背景颜色 默认是#ffffff
 setContentHeight(int mHeight) | 内容栏的高度(dp) 默认是50dp
 setContentText(int size,int color) | 内容栏字体的大小和颜色, 默认是16sp,#0aa666，用此方法会固定颜色
-setContentText(Drawable drawable) | 自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
+setContentText(ColorStateList drawable) | 自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
 setContentLine(boolean bl) | 内容栏选中是否有下划线 默认不开启
 setContentLineColor(Drawable drawable) | 自定义内容栏下划线用layer-list 默认是下边框描边 颜色#0fbc72 高度1dp
 setLine(int mHeight,int color) | 分割线的高度和颜色 默认是0.5dp #e5e5e5
@@ -123,3 +121,4 @@ build() | 参数设置完毕，一定要build一下
     </item>
 </layer-list>
 ```
+### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
