@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-##### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
+#### [点这里，源码里有一些方法说明，很详细](https://github.com/YangsBryant/TeaPickerView/blob/master/pickerviewlibrary/src/main/java/com/example/pickerviewlibrary/picker/PickerView.java) 
 
 ## TeaPickerView属性大全
 方法名 | 属性
@@ -77,10 +77,11 @@ setHeights(int mHeight) | 显示具体的高度(dp),设置0是自适应(高度�
 setScreenH(int num) | 显示的高度占屏幕的百分比
 setBackground(int color) | 设置整体的背景颜色 默认是#ffffff
 setRadius(int mRadius) | 设置圆角，默认0
+setInitSelectText | 初始化文字
 setContentBackground(int color) | 内容栏的背景颜色 默认是#ffffff
 setContentHeight(int mHeight) | 内容栏的高度(dp) 默认是50dp
 setContentText(int size,int color) | 内容栏字体的大小和颜色, 默认是16sp,#0aa666，用此方法会固定颜色
-setContentText(ColorStateList drawable) | 自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
+setContentText(Drawable drawable) | 自定义内容栏字体颜色变换器 在res目录下创建color文件夹用selector 默认颜色#555 选中颜色#0aa666
 setContentLine(boolean bl) | 内容栏选中是否有下划线 默认不开启
 setContentLineColor(Drawable drawable) | 自定义内容栏下划线用layer-list 默认是下边框描边 颜色#0fbc72 高度1dp
 setLine(int mHeight,int color) | 分割线的高度和颜色 默认是0.5dp #e5e5e5
@@ -93,3 +94,32 @@ setDiscolourColor(int color) | 设置选中项加色的颜色值，默认#0aa666
 setDiscolourHook(boolean bl) | 设置选中项是否有√图标，默认false
 setCustomHook(Drawable drawable) | 自定义√图标
 build() | 参数设置完毕，一定要build一下
+
+## 默认内容栏字体颜色变换器
+```java
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_selected="true" android:color="@color/picker_select_text_color"/>
+	<item android:state_pressed="true" android:color="@color/picker_select_text_color"/>
+	<item android:state_checked="true" android:color="@color/picker_select_text_color"/>
+	<item android:state_focused="true" android:color="@color/picker_select_text_color"/>
+	<item android:color="@color/picker_text_color"/>
+</selector> 
+```
+## 默认内容栏内容栏下划线xml
+```java
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 边框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/station_average" />
+        </shape>
+    </item>
+    <item android:bottom="1dp"> <!--设置只有底部有边框-->
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+</layer-list>
+```
