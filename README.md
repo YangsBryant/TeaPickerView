@@ -114,7 +114,7 @@ setFourthDatas(Map<String, List<String>> mFourthDatas) | 设置四级数据
 	<item android:color="@color/picker_text_color"/>
 </selector> 
 ```
-## 默认内容栏下划线xml
+## 默认内容栏下划线
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
