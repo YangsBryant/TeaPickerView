@@ -2,6 +2,20 @@
 
 ![这是一张图片](https://github.com/YangsBryant/TeaPickerView/blob/master/image/hn2u5-ukvzr.gif)
 
+## 引入module
+```java
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+```
+```java
+implementation 'com.github.YangsBryant:TeaPickerView:1.0.1'
+```
+
 ## 主要代码
 
 ```java
@@ -114,7 +128,7 @@ setFourthDatas(Map<String, List<String>> mFourthDatas) | 设置四级数据
 	<item android:color="@color/picker_text_color"/>
 </selector> 
 ```
-## 默认内容栏内容栏下划线xml
+## 默认内容栏下划线
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
