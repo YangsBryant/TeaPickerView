@@ -2,6 +2,20 @@
 
 ![这是一张图片](https://github.com/YangsBryant/TeaPickerView/blob/master/image/hn2u5-ukvzr.gif)
 
+##引入module
+```java
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+```
+```java
+implementation 'com.github.YangsBryant:TeaPickerView:1.0.1'
+```
+
 ## 主要代码
 
 ```java
