@@ -2,7 +2,7 @@
 
 ![这是一张图片](https://github.com/YangsBryant/TeaPickerView/blob/master/image/hn2u5-ukvzr.gif)
 
-##引入module
+## 引入module
 ```java
 allprojects {
     repositories {
