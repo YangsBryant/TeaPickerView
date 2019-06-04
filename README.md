@@ -70,13 +70,13 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(v -> {
             //显示选择器
-            pickerView.show(button);
+            teaPickerView.show(button);
         });
 
         //选择器点击事件
         teaPickerView.setOnPickerClickListener(pickerData -> {
             Toast.makeText(MainActivity.this,pickerData.getFirstText()+","+pickerData.getSecondText()+","+pickerData.getThirdText(),Toast.LENGTH_SHORT).show();
-            pickerView.dismiss();//关闭选择器
+            teaPickerView.dismiss();//关闭选择器
         });
     }
 }
