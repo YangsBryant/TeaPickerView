@@ -13,7 +13,7 @@ allprojects {
 }
 ```
 ```java
-implementation 'com.github.YangsBryant:TeaPickerView:1.0.1'
+implementation 'com.github.YangsBryant:TeaPickerView:1.0.2'
 ```
 
 ## 主要代码
@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
 
         data.setInitSelectText("请选择");
 
-        PickerView pickerView=new PickerView(this,data);
-        pickerView.setScreenH(3)
+        TeaPickerView teaPickerView =new TeaPickerView(this,data);
+        teaPickerView.setScreenH(3)
                 .setDiscolourHook(true)
                 .setRadius(25)
                 .setContentLine(true)
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //选择器点击事件
-        pickerView.setOnPickerClickListener(pickerData -> {
+        teaPickerView.setOnPickerClickListener(pickerData -> {
             Toast.makeText(MainActivity.this,pickerData.getFirstText()+","+pickerData.getSecondText()+","+pickerData.getThirdText(),Toast.LENGTH_SHORT).show();
             pickerView.dismiss();//关闭选择器
         });
