@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
-import com.example.pickerviewlibrary.picker.PickerView;
+import com.example.pickerviewlibrary.picker.TeaPickerView;
 import com.example.pickerviewlibrary.picker.entity.PickerData;
 import com.example.pickerviewlibrary.picker.entity.ProvinceBean;
 import com.example.pickerviewlibrary.picker.entity.SecondBean;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         data.setInitSelectText("请选择");
 
-        PickerView pickerView=new PickerView(this,data);
+        TeaPickerView pickerView=new TeaPickerView(this,data);
         pickerView.setScreenH(3)
                 .setDiscolourHook(true)
                 .setRadius(25)

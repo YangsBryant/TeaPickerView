@@ -1,22 +1,17 @@
 package com.example.pickerviewlibrary.picker.adapter;
 
 import android.annotation.SuppressLint;
-import android.app.ActionBar;
 import android.content.Context;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import com.example.pickerviewlibrary.R;
-import com.example.pickerviewlibrary.picker.PickerView;
+import com.example.pickerviewlibrary.picker.TeaPickerView;
 
 import java.util.List;
 
@@ -58,21 +53,21 @@ public class DataAdapter extends BaseAdapter {
         }else{
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        viewHolder.textView.setTextSize(PickerView.dataSize);
-        viewHolder.textView.setTextColor(PickerView.dataColor);
+        viewHolder.textView.setTextSize(TeaPickerView.dataSize);
+        viewHolder.textView.setTextColor(TeaPickerView.dataColor);
         viewHolder.textView.setText(mDatas.get(position));
-        if(checkStr.equals(mDatas.get(position))&&PickerView.discolour){
-            viewHolder.textView.setTextColor(PickerView.discolourColor);
+        if(checkStr.equals(mDatas.get(position))&& TeaPickerView.discolour){
+            viewHolder.textView.setTextColor(TeaPickerView.discolourColor);
         }
-        if(checkStr.equals(mDatas.get(position))&&PickerView.discolourHook){
+        if(checkStr.equals(mDatas.get(position))&& TeaPickerView.discolourHook){
             viewHolder.data_img.setVisibility(View.VISIBLE);
         }else{
             viewHolder.data_img.setVisibility(View.GONE);
         }
-        if(PickerView.customHook!=null){
-            viewHolder.data_img.setImageDrawable(PickerView.customHook);
+        if(TeaPickerView.customHook!=null){
+            viewHolder.data_img.setImageDrawable(TeaPickerView.customHook);
         }
-        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(AbsListView.LayoutParams.WRAP_CONTENT,PickerView.dataHeight);
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(AbsListView.LayoutParams.WRAP_CONTENT, TeaPickerView.dataHeight);
         viewHolder.textView.setLayoutParams(params);
         return convertView;
     }
