@@ -89,7 +89,6 @@ setHeights(int mHeight) | 显示具体的高度(dp),设置0是自适应(高度�
 setScreenH(int num) | 显示的高度占屏幕的百分比
 setBackground(int color) | 设置整体的背景颜色 默认是#ffffff
 setRadius(int mRadius) | 设置圆角，默认0
-setInitSelectText | 初始化文字
 setContentBackground(int color) | 内容栏的背景颜色 默认是#ffffff
 setContentHeight(int mHeight) | 内容栏的高度(dp) 默认是50dp
 setContentText(int size,int color) | 内容栏字体的大小和颜色, 默认是16sp,#0aa666，用此方法会固定颜色
@@ -109,6 +108,7 @@ build() | 参数设置完毕，一定要build一下
 
 方法名 | 属性
 --------- | -------------
+setInitSelectText | 初始文字
 setFirstDatas(List<String> mFirstDatas) | 设置一级数据
 setSecondDatas(Map<String, List<String>> mSecondDatas) | 设置二级数据
 setThirdDatas(Map<String, List<String>> mThirdDatas) | 设置三级数据
