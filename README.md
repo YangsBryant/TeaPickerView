@@ -108,7 +108,7 @@ build() | 参数设置完毕，一定要build一下
 
 方法名 | 属性
 --------- | -------------
-setInitSelectText | 初始文字
+setInitSelectText(String firstText) | 初始文字
 setFirstDatas(List<String> mFirstDatas) | 设置一级数据
 setSecondDatas(Map<String, List<String>> mSecondDatas) | 设置二级数据
 setThirdDatas(Map<String, List<String>> mThirdDatas) | 设置三级数据
